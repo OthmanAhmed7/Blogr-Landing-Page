@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+@layer components {
+  .main-bg {
+    @apply bg-gradient-to-br from-[#ff8f70] to-[#ff3d54];
+  }
+
+  .phone-bg {
+    @apply bg-gradient-to-br from-[#2f3044] to-[#3d4063];
+  }
+
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .input {
+    @apply pl-5 text-base leading-normal border outline-none sm:flex-1 max-sm:w-full text-slate-gray max-sm:p-5 sm:border-none max-sm:border-slate-gray max-sm:rounded-full;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply px-8 py-12;
+  }
+
+  .padding-x {
+    @apply px-8 sm:px-16;
+  }
+
+  .padding-y {
+    @apply py-12 sm:py-24;
+  }
+
+  .padding-l {
+    @apply pl-8 sm:pl-16;
+  }
+
+  .padding-r {
+    @apply pr-8 sm:pr-16;
+  }
+
+  .padding-t {
+    @apply pt-20 sm:pt-32;
+  }
+
+  .padding-b {
+    @apply pb-20 sm:pb-32;
+  }
+
+  .info-text {
+    @apply text-lg leading-7 font-montserrat text-slate-gray;
+  }
+}
