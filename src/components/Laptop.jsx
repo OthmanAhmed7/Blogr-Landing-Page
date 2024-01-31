@@ -4,7 +4,7 @@ const Laptop = () => {
       <img
         src="/assets/illustration-laptop-mobile.svg"
         alt="editor illustration"
-        className="block mb-8 md:hidden scale-[115%]"
+        className="block mb-8 md:hidden scale-[108%]"
       />
 
       <div className="flex flex-col gap-10 m-auto text-center md:text-left">

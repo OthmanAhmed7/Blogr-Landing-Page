@@ -14,7 +14,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="flex items-center justify-between w-full">
+    <div className="flex items-center justify-between w-full max-w-[1440px]">
       <div className="z-20 flex items-center justify-between">
         <div>
           <a href="#">
@@ -55,7 +55,7 @@ const Navbar = () => {
         />
         {toggle && (
           <>
-            <div className="absolute w-full max-w-md py-8 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[6px] shadow-2xl top-1/4 left-1/2">
+            <div className="absolute w-full max-w-md py-8 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[6px] shadow-2xl top-1/2 left-1/2">
               <div className="">
                 <ul className="flex flex-col gap-3 mx-4 cursor-pointer text-[#0d253a]">
                   {navLinks.map((nav) => (

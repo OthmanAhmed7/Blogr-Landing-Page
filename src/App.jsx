@@ -3,16 +3,11 @@ import { Navbar, Hero, Product, Phone, Laptop, Footer } from "./components";
 
 function App() {
   return (
-    <main>
-      <div className="rounded-bl-[6rem] main-bg padding">
-        <img
-          src="/assets/bg-pattern-intro-desktop.svg"
-          alt="desktop pattern"
-          className="absolute scale-[250%] sm:scale-[200%] md:scale-[150%] lg:scale-[100%] md:translate-y-[-20%]"
-        />
+    <main className="relative">
+      <section className="rounded-bl-[6rem] main-bg padding relative overflow-hidden">
         <Navbar />
         <Hero />
-      </div>
+      </section>
       <section className="overflow-hidden padding">
         <Product />
       </section>
